@@ -2,7 +2,7 @@
 
 <body>
 <h1> HI. </h1>
-  <p> Test. </p>
+  <p> Currently all the code is in Brackets, I have yet to transfer it here. </p>
 </body>
 
 </html>
