@@ -1,0 +1,23 @@
+/* help me please */
+
+body{
+    background-color: #f6f6f6;
+    /* "Great way to do it below: */
+    font: normal 16px monospace;
+}
+h1{
+    background-color: #F53;
+}
+
+.redBox {
+    border: 5px #3a8 dashed;
+    padding: 15px;
+}
+.imgContainer{
+    width: 60%;
+    margin: auto;
+    border-right: 10px #F6e8b3 solid;
+}
+#center{
+    padding-left: 35%;
+}
