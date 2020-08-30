@@ -1,7 +1,7 @@
 /* help me please */
 
 body{
-    background-color: #f6f6f6;
+    background-color: #f9f9f9;
     /* "Great way to do it below: */
     font: normal 16px monospace;
 }
@@ -17,6 +17,11 @@ h1{
     width: 60%;
     margin: auto;
     border-right: 10px #F6e8b3 solid;
+}
+
+.fruits{
+    text-align:center;
+    margin:3%;
 }
 #center{
     padding-left: 35%;
