@@ -1,4 +1,4 @@
-/* help me please */
+/* I still need to make it responsive */
 
 body{
     background-color: #f9f9f9;
@@ -6,7 +6,16 @@ body{
     font: normal 16px monospace;
 }
 h1{
-    background-color: #F53;
+    background-color: #E95434;
+    font: normal 45px Georgia; 
+    color: #A62E1C;
+}
+
+h2{
+    padding-left: 6%;
+}
+p{
+  
 }
 
 .redBox {
@@ -19,10 +28,26 @@ h1{
     border-right: 10px #F6e8b3 solid;
 }
 
-.fruits{
-    text-align:center;
-    margin:3%;
+.first{
+    align-content: center;
+    margin: 3%;
+    border-right: 5px solid #b4b9a2; 
+    max-width: 100%;
+    display:block;
+}
+.big{
+    
 }
 #center{
     padding-left: 35%;
 }
+
+/*Their own special thing */
+.image{
+    margin: 4%;
+    border-right: 5px solid #b4b9a2; 
+    max-width: 100%;
+    display:block;
+}
+
+/* Positioning a link over the 'greenfrogii' image */
