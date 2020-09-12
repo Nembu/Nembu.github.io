@@ -14,18 +14,23 @@ h1{
 h2{
     padding-left: 6%;
 }
-p{
-  
+p, li{
+  line-height: 1.4em;
 }
 
-.redBox {
+.Box {
     border: 5px #3a8 dashed;
-    padding: 15px;
+    width: auto;
+    text-align:center;
 }
 .imgContainer{
-    width: 60%;
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+    width: auto;
     margin: auto;
-    border-right: 10px #F6e8b3 solid;
+    height:auto;
+    overflow: auto;
 }
 
 .first{
@@ -38,9 +43,30 @@ p{
 .big{
     
 }
+/*IDs*/
+
 #center{
     padding-left: 35%;
 }
+
+/*Specific Links*/
+
+a.secretLink{
+ font-size: 0.9em;
+    color: #F5F5F5;
+    cursor: default;
+    
+}
+a.secretLink:hover{
+    border: none;
+}
+a.secretLink:visited{
+    color: #F5F5F5;
+}
+a.secretLink:active{
+    color: #F5F5F5;
+}
+/*End of Specific Links*/
 
 /*Their own special thing */
 .image{
@@ -49,5 +75,3 @@ p{
     max-width: 100%;
     display:block;
 }
-
-/* Positioning a link over the 'greenfrogii' image */
