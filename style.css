@@ -1,21 +1,42 @@
-/* I still need to make it responsive */
+/* Okie so it's shaping up and things are much cleaner */
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap');
+
+html {
+    overflow-x: hidden;
+}
 
 body{
-    background-color: #f9f9f9;
+    background-color: #f5f0e9;
     /* "Great way to do it below: */
-    font: normal 16px monospace;
-}
-h1{
-    background-color: #E95434;
-    font: normal 45px Georgia; 
-    color: #A62E1C;
+    font: normal 16px 'Varela Round', monospace;
 }
 
+h1, h2, h3{
+    font: normal 2em 'Varela Round', monospace;
+}
+h1{
+    background-color: #E95434; 
+    color: #A62E1C;
+    font: normal 5em 'Grenze Gotisch', sans-serif;
+}
+
+img{
+    padding: 1vw;
+    border: 1em solid #a3b879;
+    background-color: #609166;
+    box-shadow: 12px 12px 1px #c7de97; 
+}
 h2{
     padding-left: 6%;
 }
 p, li{
   line-height: 1.4em;
+}
+li{
+    margin: 2vh;
 }
 
 .Box {
@@ -33,23 +54,25 @@ p, li{
     overflow: auto;
 }
 
-.first{
+/* The following two are almost the same, so maybe join them together. */
+
+.imageParagraph{
     align-content: center;
-    margin: 3%;
-    border-right: 5px solid #b4b9a2; 
+    margin: 3%; 
     max-width: 100%;
     display:block;
 }
-.big{
-    
-}
+
 /*IDs*/
 
-#center{
-    padding-left: 35%;
+
+#placeholder{
+    height: 45vh;
+    width: 55vw;
 }
 
 /*Specific Links*/
+
 
 a.secretLink{
  font-size: 0.9em;
@@ -66,12 +89,35 @@ a.secretLink:visited{
 a.secretLink:active{
     color: #F5F5F5;
 }
+
+
 /*End of Specific Links*/
 
-/*Their own special thing */
-.image{
-    margin: 4%;
-    border-right: 5px solid #b4b9a2; 
-    max-width: 100%;
-    display:block;
+
+/* Secrets Portion [Load a Toad] */
+
+.Header{
+    padding: 2%;
+    margin: 2%;
+    background: #fc8c4e;
+    text-align:center;
+    font: 50px 0.3em Arial;
+}
+
+.window{
+    width: 100vw;
+    height: 30vw;
+    object-fit: contain;
+}
+
+.Background {
+    padding: 2vw;
+    background-color: #F5e764;
+    display: flex;
+}
+#secretTXT{
+   text-align: right; 
+}
+.secretSlideshow{
+    align-content: center;
 }
