@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ubi-qui</title>
+		
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand">Ubi-qui</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#timeline">Timeline</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#article">Articles</a>
+				</li>
+			  </ul>
+			  <div class="dropdown show">
+				<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  View COVID-19 Graphs
+				</a>
+			  
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+				  <a class="dropdown-item" href="data_page_1.html">Data-page-1</a>
+				  <a class="dropdown-item" href="data_page_2.html">Data-page-2 </a>
+				  <a class="dropdown-item" href="/HelyxGraphCode/western_data.html">Data-page-3</a>
+				  <a class="dropdown-item" href="/HelyxGraphCode/eastern_data.html"> Data-page-4 </a>
+				</div>
+			  </div>
+			</div>
+		</nav>
+
+			<!-- Load plotly.js-->
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    </head>
+
+
+	<header>
+		<div id="title-parent">
+			<h1 id="title-text">COVID-19</h1>
+			<h1 id="subtitle">Scroll Down To Begin</h1>
+			<svg width="0.9em" height="0.9em" viewBox="0 0 16 16" class="bi bi-caret-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+			  </svg>
+		</div>
+		
+
+	</header>
+
+
+    <div class="jumbotron bg-light">
+        <h1 class="display-4">How COVID-19 Spreads Through the Body</h1>
+        <p class="lead"> COVID-19 is not just a virus. It is one that has left over 1.5 million people dead worldwide.
+            </p>
+		<hr class="my-4">
+		<!-- This a link to helpful icons provided by Bootstrap, one of which is used down below: https://icons.getbootstrap.com/-->
+        <p>  It started with just 27 cases. Yet within the first 100 days of the COVID-19 outbreak over a million cases were reported across the world. </p>
+        <p class="lead">
+            <a class="btn btn-warning btn-lg btn-circle" id="defCursor" role="button"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-90deg-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" d="M4.854 14.854a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V3.5A2.5 2.5 0 0 1 6.5 1h8a.5.5 0 0 1 0 1h-8A1.5 1.5 0 0 0 5 3.5v9.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4z"/>
+			  </svg>Learn More</a>
+		</p>
+		
+	
+    </div>
+	</div>
+		
+	<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1nobdfAzhb-JTgSQGtd_solIOoo3wlenl&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0' id="timeline"></iframe>
+	
+	<article>
+		<h1>First 100 Days</h1>
+		<article>
+			<h2>Dec. 31 2019</h2>
+			<p>27 cases of pneumonia in Wuhan, China, are reported. All are due to a strange cause.</p>
+		</article>
+		<article>
+			<h2>Jan. 30 2020</h2>
+			<p>The global situation is declared a public health emergency by the WHO.</p>
+		</article>
+		<article>
+			<h2>Mar. 11 2020</h2>
+			<p>We officially enter a pandemic.</p>
+		</article>
+		<article>
+			<h2>Apr. 3 2020</h2>
+			<p>When we cross 1 million global cases of COVID-19.</p>
+		</article>
+	</article>
+
+<div class="container">
+    <div class="card mb-4 shadow-sm">
+		<div class="card-header">
+		  <h4 class="my-0 font-weight-normal">
+			<svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-arrow-down-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="article">
+				<path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+			</svg>
+		  </h4>
+		</div>
+		<div class="card-body">
+		  <h1 class="card-title pricing-card-title"> How COVID-19 Spreads </h1>
+		<p>
+			The coronavirus spreads through the air as respiratory particles which cause infection once they enter the nasal passage.
+			As it affects the upper respiratory tract, a cough can easily spread the disease to nearby people. What makes COVID-19 so
+			dangerous is that someone who is infected may not even know until two weeks have passed--and until they feel any symptoms,
+			they are at their highest point of contagion. This has made it extremely likely for an infected person to feel well enough
+			to leave their home and interact with others, indirectly leading to more infections. We have yet to develop immunity to COVID-19 and have
+			seen people get infected twice.
+		</p>
+		</div>
+	  </div>
+	  <div class="card mb-4 shadow-sm" >
+		<div class="card-header">
+		  <h4 class="my-0 font-weight-normal">
+			<svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-arrow-down-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+			</svg>
+		  </h4>
+		</div>
+		<div class="card-body">
+		  <h1 class="card-title pricing-card-title">Effects on The Lungs</h1>
+	<p> The COVID-19 virus has something that not many other viruses have: the ability to 'proofread' the virus copies it spawns.
+		So it not only worms its way into healthy cells and takes over reproduction, but it makes sure that every copy is performing well before 
+		destroying the host cell. 
+Once it reaches the lungs it causes a harsh pneumonia resulting from the body's defense against the invading particles. As fluid accumulates,
+shortness of breath results. If the virus is successful in its attacks, the alveoli sustain further damage and inflammation. Blood begins clotting
+abnormally, and soon all bodily organs begin to shut down. Death is the unfortunate result.
+	</p>
+		</div>
+	  </div>
+	  <div class="card mb-4 shadow-sm">
+		<div class="card-header">
+		  <h4 class="my-0 font-weight-normal">
+			<svg width="1.8em" height="1.8em" viewBox="0 0 16 16" class="bi bi-arrow-down-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+			  </svg>
+		  </h4>
+		</div>
+		<div class="card-body">
+		  <h1 class="card-title pricing-card-title">Effects on The Mind</h1>
+		  <p>
+			An unintended consequence of COVID-19 has been "brain fog," 
+			a sluggishness and overall weakness of the mind 
+			that has been reported to linger for several months after a COVID-19 infection. People experiencing this tend to be very forgetful, unfocused, and
+			sufferers of insomnia. It's a struggle to even get out of bed. While there are the sensory issues that accompany COVID-19, like loss of taste, 
+			these mental issues are a bit more alarming. If we base this off of previous coronavirus strains, like SARS and MERS, we see that changes to the brain
+			and "brain fog" can last for several years. 
+		  </p>
+		</div>
+	  </div>
+
+</div>
+
+<div class="container">
+<div class="jumbotron bg-light">
+	<h1 class="display-4">View The Effects and Rates of COVID-19 Spread</h1>
+	<p class="lead"> 
+		</p>
+	<hr class="my-4">
+	<!-- This a link to helpful icons provided by Bootstrap, one of which is used down below: https://icons.getbootstrap.com/-->
+	<p> Either by navigating through the dropdown menu above or by clicking below.</p>
+	<p class="lead">
+		<a class="btn btn-warning btn-lg btn-circle" href="#" role="button"> View Graphs</a>
+	</p>
+	
+</div>
+</div>
+
+<!-- A test Disclaimer for the Data Pages-->
+
+<div class="container">
+<h6> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-exclamation-octagon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1L1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z"/>
+	<path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+  </svg> Disclaimer: Not all the provided data was used in the graph for the purpose of faster load times. <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-exclamation-octagon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1L1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z"/>
+	<path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+  </svg></h6>
+</div>
+
+
+<!-- The Footer and our Resources -->
+	<div class="row">
+		<div class="col-12 col-md">
+			<!-- We can add in a little COVID logo down here with a <svg> element -->	
+		<!-- <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg> -->
+		  
+		<small class="d-block mb-3 text-muted">© 2020</small>
+		</div>
+		<div class="col-6 col-md">
+		  <h5 class="h5">The Team</h5>
+		  <ul class="list-unstyled text-small">
+			  <!-- These link to our Github accounts-->
+			<li><a class="text-muted" href="https://github.com/AdwaithHariharan">Adwaith</a></li>
+			<li><a class="text-muted" href="https://github.com/Jack2104">Jack</a></li>
+			<li><a class="text-muted" href="https://github.com/Nembu">Isabel</a></li>
+		  </ul>
+		</div>
+		<div class="col-6 col-md">
+		  <h5 class="h5">Resources</h5>
+		  <ul class="list-unstyled text-small">
+			  <!--These will just be any resources, like the graph library, we want to cite.-->
+			<li><a class="text-muted" href="https://www.qoom.io/">Qoom</a></li>
+			<li><a class="text-muted" href="https://plotly.com/javascript/">Plotly</a></li>
+			<!--TODO: Link it to my Github repository-->
+			<li><a class="text-muted">Github</a></li>
+		  </ul>
+		</div>
+	  </div>	
+
+
+<!-- Scripts Below -->
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+</script>
+	</body>
+</html>

@@ -1,0 +1,109 @@
+/* Imported Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+/* Title animation put in by Jack. Modified to be more mobile-friendly*/
+@keyframes title-text-animation {
+    from {
+        top: 15%;
+        color: rgba(0, 0, 0, 0)
+    }
+
+    to {
+        top: 20%;
+        color: rgba(0, 0, 0, 255)
+    }
+}
+
+@keyframes subtitle-animation {
+    from {
+        top: 35%;
+        color: transparent;
+    }
+
+    to {
+        top: 40%;
+        color:#131414 ;
+    }
+}
+* {
+    text-align: center;
+}
+#title-parent {
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
+    background-image: linear-gradient(to right, #ffbaba, #d17979);
+}
+
+#title-text {
+    font-size: 5.5em;
+
+    position: absolute;
+    animation: title-text-animation;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#subtitle {
+    font-size: 1.5em;
+
+    position: absolute;
+    top: 20%;
+    animation: subtitle-animation;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Add some js to this so that it "points" towards the mouse */
+#title-image {
+    position: aboslute;
+    top: 10%;
+}
+.dropdown{
+ padding-right: 12%;
+}
+
+.row {
+ background-color: #313131;
+ border-top: 0.5rem solid #1d1d1d;
+}
+/* Fix the link color*/
+.text-muted:hover{
+color: #ffe3e3
+}
+
+.h5 {
+    color: #cccccc;
+}
+
+.card-header {
+    background-image: linear-gradient(to right, #faa1a1, #c45f5f);
+
+}
+
+.card-body {
+    box-shadow: 10px 10px 2px 0.1px #f5efef;
+}
+#defCursor {
+    cursor: default;
+}
+
+/* Disclaimer for the Data Pages*/
+h6 {
+    background-image: linear-gradient(to right, #ffdeb8, #faa75a);
+    border-radius: 25% 10%;
+}

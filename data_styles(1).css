@@ -1,0 +1,48 @@
+@keyframes h1-animation {
+	from {
+		left: 0%;
+		color: rgba(0, 0, 0, 0);
+	}
+	to {
+		left: 1.25%;
+		color: rgba(0, 0, 0, 255);
+	}
+}
+
+@keyframes source-animation {
+	from {
+		left: 3%;
+		color: rgba(211, 211, 211, 0);
+	}
+	to {
+		left: 1.5%;
+		color: rgba(211, 211, 211, 200);
+	}
+}
+
+.data-vis {
+	position: relative;
+	padding-left: 0.5%;
+	padding-top: 1%;
+}
+
+.data-vis #heading {
+	position: relative;
+	font-size: 50px;
+
+	animation: h1-animation;
+	animation-duration: 2s;
+	animation-delay: 0.25s;
+	animation-fill-mode: both;
+	animation-timing-function: ease;
+}
+
+.data-vis #source {
+	position: relative;
+
+	animation: source-animation;
+	animation-duration: 1.5s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+	animation-timing-function: ease;
+}
